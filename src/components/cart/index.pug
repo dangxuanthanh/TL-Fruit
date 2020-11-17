@@ -1,0 +1,72 @@
+section.block_cart
+	.container
+		.row
+			.col-lg-8
+				.cart-inner
+					.card-heading
+						.card-title Giỏ hàng của bạn (1 sản phẩm)
+					.card-body
+						.cart-product-list
+							.cart-product-list-heading Chọn tất cả (1 sản phẩm)
+							.cart-product-list-body
+								.cart-product-item
+									.cart-product-item-img
+										a(href='')
+											img(src="./img/s-3/1.png", alt="")
+									.cart-product-item-content
+										.cart-product-item-content-left
+											.cart-product-item-content-top
+												.cart-product-item-detail
+													a.cart-product-item-name(href='') Chuối vàng
+													.cart-product-item-price
+														p 445.000 ₫
+														del 890.000 ₫
+														span.discount - 50%
+													.item-quantity
+														.input-group
+															.input-group-btn
+																.qty-minus.btn-number
+																	em.ri-subtract-line
+															input.product-details-quantity.form-control.input-number(type='text', value='1')
+															.input-group-btn
+																.qty-plus.btn-number
+																	em.ri-add-line
+			.col-lg-4
+				.cart-aside
+					.card-item
+						.card-heading
+							.card-title Thông tin đơn hàng
+						.card-body
+							ul
+								li
+									strong Tạm tính (0 sản phẩm)
+									span 0 ₫
+								li
+									strong Giảm giá
+									span 0 ₫
+						.card-footer
+							ul
+								li
+									strong Tổng cộng:
+									strong.text-main 0 ₫
+					.card-item
+						.card-heading
+							.card-title Mã giảm giá/ quà tặng
+						.card-body
+							.cart-input
+								label Nhập mã giảm giá
+								.form
+									input(type='text' max-length='20' placeholder='')
+									button Áp dụng
+							.cart-note
+								p.text-grey Sau khi áp dụng, Mã giảm giá có thể không dùng được trong vòng 15 phút.
+								p
+									| Trong quá trình thanh toán, sẽ tạm khóa mã giảm giá của quý khách để đảm bảo phiên giao dịch được ổn định. Mã giảm giá sẽ được mở lại ngay khi phiên giao dịch kết thúc
+	.cart-btn-group
+		.button-group
+			a(href='/')
+				em.ri-arrow-left-line
+				span Tiếp tục mua hàng
+			a(href='information-account.html')
+				span Tiến hành thanh toán
+				em.ri-arrow-right-line
